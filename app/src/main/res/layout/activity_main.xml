@@ -5,47 +5,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
 
-    <!--tableRow:-->
-    <!--//comment : ctrl + /-->
-        <!--width : match_parent-->
-        <!--height : wrap_content-->
-    <!--viewcon : wrap_content-->
-
-    <TableRow
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="#f20">
+    <!--khi chia layout_weight cho tablerow => -->
+    <!--thi chieu cao se anh huong nen de thanh -->
+    <!--layout_height=0-->
+    <TableRow>
         <TextView
-
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_span="6"
+            android:textColor="#ffff"
+            android:textSize="40sp"
             android:text="View 1"
-            android:textSize="40sp"
-            android:background="#998634"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="View 2"
-            android:textSize="40sp"
-            android:background="#B41BF3"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="View 3"
-            android:textSize="40sp"
-            android:background="#4AC4B5"/>
+            android:background="#0B0C0B"/>
     </TableRow>
-    <TableRow
-        android:background="#6F6A6A"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+    <TableRow>
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="View 3"
+            android:layout_span="2"
+            android:textColor="#ffff"
             android:textSize="40sp"
-            android:background="#4AC4B5"/>
+            android:text="View 2"
+            android:background="#888786" />
+        <TextView
+            android:layout_span="2"
+            android:textColor="#ffff"
+            android:textSize="40sp"
+            android:text="View 3"
+            android:background="#2BA75A" />
+        <TextView
+            android:layout_span="2"
+            android:textColor="#ffff"
+            android:textSize="40sp"
+            android:text="View 4"
+            android:background="#673AB7"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_span="3"
+            android:textColor="#ffff"
+            android:textSize="40sp"
+            android:text="View 5"
+            android:background="#00BCD4"/>
+        <TextView
+            android:layout_span="3"
+            android:textColor="#ffff"
+            android:textSize="40sp"
+            android:text="View 6"
+            android:background="#E91E63" />
+
     </TableRow>
 </TableLayout>
